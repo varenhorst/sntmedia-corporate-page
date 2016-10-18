@@ -1,9 +1,9 @@
-/* style.less converted css */
-
+/* Converted Less File */
 body {
   margin: 0;
   width: 100%;
   height: 100%;
+  font-family: Lato;
 }
 .header {
   height: 610px;
@@ -83,9 +83,6 @@ body {
     border-top: 25px solid transparent;
   }
 }
-.content {
-  height: 750px;
-}
 @media (max-width: 768px) {
   .content {
     height: 100%;
@@ -110,10 +107,6 @@ body {
 }
 .content-container {
   width: 750px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto;
   top: 64px;
   height: 100%;
@@ -123,83 +116,52 @@ body {
     width: 80%;
   }
 }
-.content-container-left {
-  width: 250px;
-  height: 100%;
-  margin-right: 50px;
+.content-container-item {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  -moz-box-wrap: wrap;
-  -webkit-box-wrap: wrap;
-  -ms-flexbox-wrap: wrap;
+  width: 100%;
+  margin-bottom: 54px;
+}
+.content-container-item-left {
+  width: 250px;
+  margin-right: 50px;
+  position: relative;
+  top: 15px;
 }
 @media (max-width: 768px) {
-  .content-container-left {
+  .content-container-item-left {
     display: none;
   }
 }
-.content-container-left-item {
-  width: 100%;
-  height: 0px;
+.content-container-item-left-text {
   font-family: Lato;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
   color: #000000;
 }
-.content-container-left-item-text {
-  margin-bottom: 8px;
-}
-.content-container-left-item-bar {
+.content-container-item-left-bar {
   width: 100%;
   height: 2px;
   background-color: #4a90e2;
   bottom: 0;
 }
-.content-container-right {
+.content-container-item-right {
   width: 462px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  -moz-box-wrap: wrap;
-  -webkit-box-wrap: wrap;
-  -ms-flexbox-wrap: wrap;
-  position: relative;
-  bottom: 10px;
 }
 @media (max-width: 768px) {
-  .content-container-right {
+  .content-container-item-right {
     width: 100%;
   }
 }
-.content-container-right-item {
-  width: 100%;
-  height: 0px;
-  font-family: Lato;
-  color: #000000;
-}
-@media (max-width: 768px) {
-  .content-container-right-item {
-    height: auto;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .content-container-right-item:first-child {
-    margin-top: 0px;
-  }
-}
-.content-container-right-item-title {
+.content-container-item-right-title {
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
 }
-.content-container-right-item-text {
+.content-container-item-right-text {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -207,14 +169,14 @@ body {
   line-height: 1.57;
   margin-top: 20px;
 }
-.content-container-right-item-text > a {
+.content-container-item-right-text > a {
   color: #4a90e2;
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
   display: block;
 }
-.content-container-right-item-text > a > i {
+.content-container-item-right-text > a > i {
   font-size: 14px;
   font-weight: 100;
 }

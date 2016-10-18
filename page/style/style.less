@@ -3,6 +3,8 @@ body{
   margin: 0;
   width: 100%;
   height: 100%;
+  font-family: Lato;
+
 }
 .header {
   height: 610px;
@@ -66,7 +68,7 @@ body{
   }
 }
 .content {
-  height: 750px;
+  // height: 750px;
   @media (max-width: 768px){
     height: 100%;
   }
@@ -87,10 +89,6 @@ body{
   }
   &-container {
     width: 750px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: auto;
     //position: relative;
     top: 64px;
@@ -98,31 +96,28 @@ body{
     @media(max-width: 768px){
       width: 80%;
     }
-    &-left { // left column starts
-      width: 250px;
-      height: 100%;
-      margin-right: 50px;
+    &-item {
+      display: flex;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      -moz-box-wrap: wrap;
-      -webkit-box-wrap: wrap;
-      -ms-flexbox-wrap: wrap;
-      @media(max-width: 768px){
-        display: none;
-      }
-      &-item {
-        width: 100%;
-        height: 0px;
-        font-family: Lato;
-        font-size: 18px;
-        font-weight: normal;
-        font-style: normal;
-        color: #000000;
+      width: 100%;
+      margin-bottom: 54px;
+      &-left {
+        width: 250px;
+        margin-right: 50px;
+        position: relative;
+        top: 15px;
+        @media (max-width: 768px){
+          display: none;
+        }
         &-text {
-          margin-bottom: 8px;
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: normal;
+          font-style: normal;
+          color: #000000;
         }
         &-bar {
           width: 100%;
@@ -131,42 +126,17 @@ body{
           bottom: 0;
         }
       }
-    } // right columns starts;
-    &-right {
-      width: 462px;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      flex-wrap: wrap;
-      -moz-box-wrap: wrap;
-      -webkit-box-wrap: wrap;
-      -ms-flexbox-wrap: wrap;
-      position: relative;
-      bottom: 10px;
-      @media (max-width: 768px){
-        width: 100%;
-      }
-      &-item { // right-item
-        width: 100%;
-        height: 0px;
-        font-family: Lato;
-        color: #000000;
-        @media(max-width: 768px){
-          height: auto;
-          margin-top:30px;
-        }
-        &:first-child{
-          @media(max-width: 768px){
-            margin-top: 0px;
-          }
+      &-right {
+        width: 462px;
+        @media (max-width: 768px){
+          width: 100%;
         }
         &-title {
           font-size: 24px;
           font-weight: normal;
           font-style: normal;
         }
-        &-text { // right-text
+        &-text {
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
